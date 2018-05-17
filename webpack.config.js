@@ -35,4 +35,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.css']
   },
+  devServer: {
+    contentBase: path.join(__dirname, '/'),
+    historyApiFallback: true,
+    port: 3000
+  },
 };
